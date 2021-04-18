@@ -1,0 +1,14 @@
+[Unit]
+Description=Toby LTE Modem Service
+After=network.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+User=root
+ExecStart=/usr/bin/toby-lte-modem-manager -d /dev/ttyUSB0 -a CellProviderAPN -i wwan0 -v
+
+[Install]
+WantedBy=multi-user.target

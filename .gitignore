@@ -1,0 +1,9 @@
+# Ignore everything
+*
+# Whitelist specific files
+!toby-lte-modem-manager.go
+!toby-lte-modem-manager.service
+!toby-lte-modem-manager.init
+!README.md
+!LICENSE
+!.gitignore
